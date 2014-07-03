@@ -173,7 +173,7 @@ GtkAssistant .sidebar .highlight {
 
 GtkAssistant .sidebar {
     padding: 3px;
-    border-width: 0 1px 0 0;
+    
     border-style: solid;
     border-right-color: shade(@theme_bg_color, 0.8);
     border-radius: 0;
@@ -918,7 +918,7 @@ GtkComboBox .menu {
 .menubar.menuitem,
 .menubar .menuitem {
     padding: 3px 5px;
-    border-width: 1px 1px 0 1px;
+    
     border-style: solid;
     border-color: transparent;
     background-color: transparent;
@@ -952,7 +952,7 @@ GtkTreeMenu .menuitem {
 .menuitem,
 .menu .menuitem {
     padding: 3px;
-    border-width: 1px;
+   
     border-style: solid;
     border-color: transparent;
     border-radius: 0;
@@ -1205,15 +1205,15 @@ GtkProgressBar {
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-image: linear-gradient(to bottom,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color_dark, 1.10),
+                                      shade(@theme_selected_bg_color_dark, 0.95)
                                       );
 }
 
 .progressbar.vertical {
     background-image: linear-gradient(to right,
-                                      shade(@theme_selected_bg_color, 1.10),
-                                      shade(@theme_selected_bg_color, 0.95)
+                                      shade(@theme_selected_bg_color_dark, 1.10),
+                                      shade(@theme_selected_bg_color_dark, 0.95)
                                       );
 }
 

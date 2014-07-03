@@ -289,9 +289,9 @@ style "menu"
 	bg[ACTIVE]        = shade (1.18, @bg_color)
 	bg[INSENSITIVE]   = shade (1.18, @bg_color)
 	fg[NORMAL]        = @fg_color # Color for normal text.
-	fg[PRELIGHT]      = @base_color
-	fg[SELECTED]      = @base_color
-	fg[ACTIVE]        = @base_color
+	fg[PRELIGHT]      = @text_color
+	fg[SELECTED]      = @text_color
+	fg[ACTIVE]        = @text_color
 	fg[INSENSITIVE]   = mix (0.4, @fg_color, @bg_color) # Text color for non-interactive menu items
 	text[NORMAL]      = @text_color # Color for menu-item radio/checks.
 	base[NORMAL]      = @bg_color # Color for menu-item radio/checks background.
@@ -303,9 +303,8 @@ style "menu"
 	engine "murrine" 
 	{
 		roundness = 0 # Roundness of menu items.
-		gradient_shades = {1.25,1.1,1.1,1.0}
-		contrast = 0.9
-		lightborder_shade = 1.5
+		gradient_shades = {1.15,1.1,1.1,1.0}
+		contrast = 0.0
 	}
 }
 
@@ -339,7 +338,6 @@ style "menubar-menuitem"
 	
 	engine "murrine"
         {
-		lightborder_shade = 1.5
         }
 }
 
